@@ -213,7 +213,8 @@ exports.getAllScream = (req,res) => { // pakai fungsi app.get jika menggunakan e
                 return screamDocument.update({likeCount: screamData.likeCount});
               })
               .then(()=>{
-                res.json({screamData});
+                // res.json({screamData});
+                res.json(screamData);
               })
           }
       })
